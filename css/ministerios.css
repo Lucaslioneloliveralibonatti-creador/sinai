@@ -1,0 +1,1103 @@
+/* ================================================
+   ESTILOS PARA PÁGINAS DE MINISTERIOS
+   ================================================ */
+
+/* ========== Banner del Ministerio ========== */
+.ministerio-hero {
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+.ministerio-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.ministerio-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 2rem 2.5rem;
+  background: none;
+  border-radius: 0;
+}
+
+.ministerio-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ministerio-hero p {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+/* ========== Descripción del Ministerio ========== */
+.ministerio-descripcion {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.descripcion-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.descripcion-texto h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.descripcion-texto p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #6b5e52;
+  margin-bottom: 1.5rem;
+}
+
+.descripcion-imagen {
+}
+
+.descripcion-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center center;
+  display: block;
+}
+
+/* Estadísticas */
+.ministerio-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f5efe6, #fff);
+  border-radius: 10px;
+  border: 2px solid #e8e0d0;
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(201, 168, 76, 0.15);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #c9a84c;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #8c7b6b;
+}
+
+/* ========== Visión y Misión ========== */
+.vision-mision {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f5efe6, #fff);
+}
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.vm-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.vm-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(201, 168, 76, 0.2);
+}
+
+.vm-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.vm-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.vm-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #8c7b6b;
+}
+
+/* ========== Palabra Rema ========== */
+.palabra-rema {
+  padding: 5rem 0;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+.rema-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.rema-label {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #c9a84c;
+  margin-bottom: 2rem;
+}
+
+.rema-versiculo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  border: none;
+}
+
+.rema-cita {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ========== Foto del Equipo ========== */
+.equipo-foto-section {
+  padding: 5rem 0;
+  background: #fff;
+  text-align: center;
+}
+
+.equipo-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.equipo-subtitulo {
+  font-size: 1.1rem;
+  color: #8c7b6b;
+  margin-bottom: 3rem;
+}
+
+.equipo-foto-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.equipo-foto {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ========== Actividades ========== */
+.ministerio-actividades {
+  padding: 5rem 0;
+  background: white;
+}
+
+.actividades-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.actividad-card {
+  background: linear-gradient(135deg, #fff, #f5efe6);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 2px solid #e8e0d0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.actividad-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(201, 168, 76, 0.15);
+  border-color: #c9a84c;
+}
+
+.actividad-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.actividad-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.actividad-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #8c7b6b;
+  margin-bottom: 1.5rem;
+}
+
+.actividad-horario {
+  display: inline-block;
+  background: #c9a84c;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ========== Requisitos ========== */
+.requisitos {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f5efe6, #fff);
+}
+
+.requisitos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.requisito-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.requisito-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 8px 30px rgba(201, 168, 76, 0.12);
+}
+
+.requisito-check {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #c9a84c, #3b2314);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.requisito-texto h4 {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.requisito-texto p {
+  font-size: 0.95rem;
+  color: #8c7b6b;
+  line-height: 1.5;
+}
+
+/* ========== Grupos por Edad (Kids) ========== */
+.grupos-edad {
+  padding: 5rem 0;
+  background: white;
+}
+
+.grupos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.grupo-card {
+  background: linear-gradient(135deg, #fff, #f5efe6);
+  padding: 2.5rem 1.5rem;
+  border-radius: 15px;
+  border: 2px solid #e8e0d0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.grupo-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(201, 168, 76, 0.15);
+  border-color: #c9a84c;
+}
+
+.grupo-emoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.grupo-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.grupo-edad {
+  font-size: 1rem;
+  color: #c9a84c;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.grupo-card p {
+  font-size: 0.95rem;
+  color: #8c7b6b;
+  line-height: 1.5;
+}
+
+/* ========== Pilares (Varones) ========== */
+.pilares {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f5efe6, #fff);
+}
+
+.pilares-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.pilar-card {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 4px solid #c9a84c;
+}
+
+.pilar-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(201, 168, 76, 0.2);
+}
+
+.pilar-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #c9a84c, #3b2314);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 auto 1.5rem;
+}
+
+.pilar-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.pilar-card p {
+  font-size: 0.95rem;
+  color: #8c7b6b;
+  line-height: 1.5;
+}
+
+/* ========== Áreas de Enfoque (Mujeres) ========== */
+.areas-enfoque {
+  padding: 5rem 0;
+  background: white;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.area-card {
+  background: linear-gradient(135deg, #fff, #f5efe6);
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #e8e0d0;
+  transition: all 0.3s ease;
+}
+
+.area-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(201, 168, 76, 0.15);
+  border-color: #c9a84c;
+}
+
+.area-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.area-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.area-card p {
+  font-size: 1rem;
+  color: #8c7b6b;
+  line-height: 1.6;
+}
+
+/* ========== Galería Carrusel ========== */
+.ministerio-galeria {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f5efe6, #fff);
+}
+
+/* ========== Galería Full Width ========== */
+.galeria-fullwidth {
+  padding: 0;
+  background: #fff;
+}
+
+.galeria-fullwidth-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.galeria-fw-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.galeria-fw-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.galeria-fw-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+.galeria-fw-slide img {
+  width: 100%;
+  height: 70vh;
+  object-fit: contain;
+  display: block;
+}
+
+.galeria-fw-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  color: #1a1a1a;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.galeria-fw-prev {
+  left: 2rem;
+}
+
+.galeria-fw-next {
+  right: 2rem;
+}
+
+.galeria-fw-btn:hover {
+  background: #c9a84c;
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.galeria-fw-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.5rem 0;
+  background: #fff;
+}
+
+.galeria-fw-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.galeria-fw-dot.active {
+  background: #c9a84c;
+  transform: scale(1.2);
+}
+
+.galeria-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.galeria-viewport {
+  overflow: hidden;
+  border-radius: 12px;
+  flex: 1;
+}
+
+.galeria-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.galeria-slide {
+  min-width: calc(100% / 3);
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+
+.galeria-slide img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.galeria-slide img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.galeria-btn {
+  background: #c9a84c;
+  color: white;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.galeria-btn:hover {
+  background: #3b2314;
+  transform: scale(1.1);
+}
+
+.galeria-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.galeria-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.galeria-dot.active {
+  background: #c9a84c;
+  transform: scale(1.2);
+}
+
+.galeria-placeholder {
+  text-align: center;
+  color: #999;
+  padding: 3rem;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* ========== Lightbox para ampliar fotos ========== */
+.galeria-lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.galeria-lightbox.active {
+  display: flex;
+}
+
+.galeria-lightbox img {
+  max-width: 90%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  animation: lightboxZoomIn 0.3s ease;
+}
+
+@keyframes lightboxZoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.galeria-lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  z-index: 10001;
+}
+
+.galeria-lightbox-close:hover {
+  transform: scale(1.2);
+  color: #c9a84c;
+}
+
+.galeria-lightbox-prev,
+.galeria-lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(201, 168, 76, 0.8);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  z-index: 10001;
+}
+
+.galeria-lightbox-prev { left: 1.5rem; }
+.galeria-lightbox-next { right: 1.5rem; }
+
+.galeria-lightbox-prev:hover,
+.galeria-lightbox-next:hover {
+  background: #c9a84c;
+}
+
+.galeria-lightbox-counter {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+}
+
+/* ========== Formulario de Contacto ========== */
+.ministerio-contacto {
+  padding: 5rem 0 6rem;
+  background: #f5efe6;
+}
+
+.ministerio-contacto .formulario-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.ministerio-contacto .formulario-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin-bottom: 1.2rem;
+}
+
+.ministerio-contacto .formulario-header p {
+  font-size: 1rem;
+  color: #8c7b6b;
+  max-width: 500px;
+  margin: 1.2rem auto 0;
+  line-height: 1.7;
+}
+
+.ministerio-contacto .header-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ministerio-contacto .header-divider::before,
+.ministerio-contacto .header-divider::after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background: rgba(201, 168, 76, 0.6);
+}
+
+.ministerio-contacto .header-divider-diamond {
+  width: 7px;
+  height: 7px;
+  background: #c9a84c;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.ministerio-contacto .formulario-form {
+  max-width: 680px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 3rem 3.5rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.07);
+}
+
+.ministerio-contacto .form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.ministerio-contacto .form-group {
+  margin-bottom: 1.8rem;
+}
+
+.ministerio-contacto .form-group label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin-bottom: 0.6rem;
+}
+
+.ministerio-contacto .form-opcional {
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #aaa;
+  font-size: 0.75rem;
+}
+
+.ministerio-contacto .form-group input,
+.ministerio-contacto .form-group select,
+.ministerio-contacto .form-group textarea {
+  width: 100%;
+  padding: 0.85rem 0;
+  border: none;
+  border-bottom: 1px solid #d8d0c4;
+  border-radius: 0;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  color: #1a1a1a;
+  background: transparent;
+  transition: border-color 0.2s ease;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.ministerio-contacto .form-group input::placeholder,
+.ministerio-contacto .form-group textarea::placeholder {
+  color: #bbb;
+}
+
+.ministerio-contacto .form-group input:focus,
+.ministerio-contacto .form-group select:focus,
+.ministerio-contacto .form-group textarea:focus {
+  border-bottom-color: #c9a84c;
+}
+
+.ministerio-contacto .form-group textarea {
+  resize: none;
+  min-height: 110px;
+}
+
+.ministerio-contacto .form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.ministerio-contacto .btn-enviar {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #1a1a1a;
+  border: none;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.ministerio-contacto .btn-enviar:hover {
+  background: #c9a84c;
+}
+
+.ministerio-contacto .form-privacidad {
+  font-size: 0.8rem;
+  color: #bbb;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .ministerio-contacto .formulario-form {
+    padding: 2rem 1.5rem;
+  }
+  .ministerio-contacto .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .ministerio-contacto .form-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ========== Estilos Comunes ========== */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #8c7b6b;
+  margin-bottom: 3.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 1024px) {
+  .descripcion-grid,
+  .contacto-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .actividades-grid,
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pilares-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grupos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ministerio-stats {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ministerio-hero {
+    height: 400px;
+  }
+
+  .ministerio-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .ministerio-hero p {
+    font-size: 1.1rem;
+  }
+
+  .descripcion-texto h2,
+  .contacto-info h2,
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .vm-grid,
+  .requisitos-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .actividades-grid,
+  .areas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-slide {
+    min-width: 100%;
+  }
+
+  .galeria-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .pilares-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grupos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ministerio-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .ministerio-form {
+    padding: 2rem;
+  }
+
+  .info-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ministerio-hero h1 {
+    font-size: 2rem;
+  }
+
+  .ministerio-hero p {
+    font-size: 1rem;
+  }
+
+  .pilares-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .ministerio-form {
+    padding: 1.5rem;
+  }
+}

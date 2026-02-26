@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(tree:*)",
+      "Bash(wc:*)",
+      "Bash(ls:*)",
+      "Bash(brew install:*)",
+      "Bash(avconvert:*)",
+      "Bash(git -C \"/Users/lucasolivera/Desktop/sinai \" status)"
+    ]
+  }
+}

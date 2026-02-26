@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Iglesia Sinai</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contacto.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Encabezado / Menú ======= -->
+  <header id="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo Iglesia Sinai">
+        <span>SINAI</span>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="dropdown">
+            <a href="#ministerios">Ministerios <span class="arrow">▾</span></a>
+            <ul class="submenu">
+              <li><a href="ministerios/alabanza.html">Alabanza</a></li>
+              <li><a href="ministerios/jovenes.html">Jóvenes</a></li>
+              <li><a href="ministerios/kids.html">Kids</a></li>
+              <li><a href="ministerios/varones.html">Varones</a></li>
+              <li><a href="ministerios/mujeres.html">Mujeres</a></li>
+              <li><a href="ministerios/danza.html">Danza</a></li>
+              <li><a href="ministerios/multimedia.html">Multimedia</a></li>
+            </ul>
+          </li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="donaciones.html">Dar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="contacto-page-header">
+    <div class="contacto-page-header-content">
+      <h1>Contáctanos</h1>
+      <div class="header-divider">
+        <div class="header-divider-diamond"></div>
+      </div>
+      <p>Acérquense a Dios, y él se acercará a ustedes — Santiago 4:8</p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <section class="formulario-section">
+    <div class="container">
+
+      <div class="formulario-header fade-in">
+        <h2>Envíanos un Mensaje</h2>
+        <div class="header-divider">
+          <div class="header-divider-diamond"></div>
+        </div>
+        <p>¿Tenés alguna pregunta o petición de oración? Completá el formulario y te respondemos a la brevedad.</p>
+      </div>
+
+      <form id="contactForm" class="formulario-form fade-in" action="https://formspree.io/f/mkovkydk" method="POST">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="telefono">Teléfono <span class="form-opcional">(opcional)</span></label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+598 ···">
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <select id="asunto" name="asunto" required>
+              <option value="">Seleccioná un asunto</option>
+              <option value="informacion">Información General</option>
+              <option value="oracion">Petición de Oración</option>
+              <option value="visita">Primera Visita</option>
+              <option value="ministerio">Unirse a un Ministerio</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje acá..." required></textarea>
+        </div>
+
+        <div class="form-footer">
+          <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+          <p class="form-privacidad">Tus datos serán tratados con confidencialidad.</p>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="mapa-section">
+    <div class="container">
+
+      <div class="mapa-header fade-in">
+        <h2 class="section-title">Cómo Llegar</h2>
+        <div class="header-divider">
+          <div class="header-divider-diamond"></div>
+        </div>
+      </div>
+
+      <div class="mapa-grid fade-in">
+
+        <!-- Mapa Google Maps -->
+        <div class="mapa-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.3!2d-56.1!3d-34.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCam.+Benito+Berges+4347%2C+Montevideo!5e0!3m2!1ses!2suy!4v1"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación Iglesia Sinai">
+          </iframe>
+        </div>
+
+        <!-- Información y cómo llegar -->
+        <div class="mapa-info">
+
+          <div class="mapa-direccion">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <div>
+              <strong>Iglesia Sinai</strong>
+              <span>Cam. Benito Berges 4347<br>Montevideo, Uruguay</span>
+            </div>
+          </div>
+
+          <div class="mapa-indicaciones-lista">
+
+            <div class="mapa-indicacion">
+              <div class="mapa-indicacion-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+                </svg>
+              </div>
+              <div>
+                <h4>En Auto</h4>
+                <p>Estacionamiento gratuito disponible. Entrada por la calle lateral.</p>
+              </div>
+            </div>
+
+            <div class="mapa-indicacion">
+              <div class="mapa-indicacion-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="3" width="22" height="13" rx="2"/><path d="M1 9h22M7 3v13M17 3v13"/><path d="M4 19l-1 2M20 19l1 2"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Transporte Público</h4>
+                <p>Líneas 5, 12 y 18 con parada a 2 cuadras.</p>
+              </div>
+            </div>
+
+            <div class="mapa-indicacion">
+              <div class="mapa-indicacion-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Accesibilidad</h4>
+                <p>Instalaciones totalmente accesibles para personas con movilidad reducida.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="https://maps.app.goo.gl/d4bBXi9Pz32yXwLp7" target="_blank" class="mapa-btn">
+            Abrir en Google Maps
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="img/logo.png" alt="Logo Iglesia Sinai">
+          <span>SINAI</span>
+        </div>
+        <p class="footer-description">Una familia de fe comprometida con el amor de Cristo y el servicio al prójimo.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/sinai.tucasa.uy/about" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/sinaitucasa.uy/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@sinaitucasa.uy" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Horarios de Reuniones</h3>
+        <ul class="horarios-list">
+          <li>
+            <strong>Domingo</strong>
+            <span>10:00 AM - Culto general</span>
+          </li>
+          <li>
+            <strong>Martes</strong>
+            <span>19:00 PM - Culto entre semana</span>
+          </li>
+          <li>
+            <strong>Sábado</strong>
+            <span>18:00 PM - Reunión de Jóvenes</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <ul class="contacto-list">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="mailto:soportesinai4347@gmail.com">soportesinai4347@gmail.com</a>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <a href="tel:+59812345678">+598 1234 5678</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Iglesia Sinai - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

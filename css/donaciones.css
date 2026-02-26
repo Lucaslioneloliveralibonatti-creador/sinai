@@ -1,0 +1,776 @@
+/* ================================================
+   ESTILOS PARA PÁGINA DONACIONES
+   ================================================ */
+
+/* ========== Page Header ========== */
+.donaciones-page-header {
+  position: relative;
+  height: 400px;
+  margin-top: 80px;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.donaciones-page-header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 2rem 2.5rem;
+}
+
+.donaciones-page-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.donaciones-page-header .header-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 1rem 0;
+}
+
+.donaciones-page-header .header-divider::before,
+.donaciones-page-header .header-divider::after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background: rgba(201, 168, 76, 0.6);
+}
+
+.donaciones-page-header .header-divider-diamond {
+  width: 7px;
+  height: 7px;
+  background: #c9a84c;
+  transform: rotate(45deg);
+}
+
+.donaciones-page-header p {
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  font-style: normal;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ========== Introducción ========== */
+.intro-donaciones {
+  padding: 5rem 0;
+  background: white;
+}
+
+.intro-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #8c7b6b;
+  margin-bottom: 3rem;
+}
+
+.intro-verse {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #f5efe6, #fff);
+  padding: 2.5rem;
+  border-radius: 15px;
+  border-left: 5px solid #c9a84c;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.verse-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+  color: #c9a84c;
+}
+
+.verse-text {
+  text-align: left;
+}
+
+.verse-text p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #1a1a1a;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.verse-text cite {
+  color: #c9a84c;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* ========== Por Qué Dar ========== */
+.porque-dar-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f5efe6, #fff);
+}
+
+.razones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.razon-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 4px solid #c9a84c;
+}
+
+.razon-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(201, 168, 76, 0.2);
+}
+
+.razon-icono {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.razon-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.razon-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #8c7b6b;
+  margin-bottom: 1.5rem;
+}
+
+.razon-verso {
+  display: block;
+  background: linear-gradient(135deg, #f5efe6, #fff);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #c9a84c;
+  border-left: 3px solid #c9a84c;
+}
+
+/* ========== Dónde Va Tu Ofrenda ========== */
+.donde-va-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.uso-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.uso-card {
+  background: linear-gradient(135deg, #fff, #f5efe6);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  border: 2px solid #e8e0d0;
+  transition: all 0.3s ease;
+}
+
+.uso-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(201, 168, 76, 0.15);
+  border-color: #c9a84c;
+}
+
+.uso-porcentaje {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #c9a84c;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.uso-barra {
+  width: 100%;
+  height: 8px;
+  background: #e8e0d0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.uso-progreso {
+  height: 100%;
+  background: linear-gradient(90deg, #c9a84c, #3b2314);
+  border-radius: 10px;
+  transition: width 1s ease;
+}
+
+.uso-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.uso-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.uso-card li {
+  padding: 0.5rem 0;
+  color: #8c7b6b;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.uso-card li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #c9a84c;
+  font-weight: 700;
+}
+
+.transparencia-nota {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #f5efe6, #fff);
+  padding: 2.5rem;
+  border-radius: 15px;
+  border-left: 5px solid #c9a84c;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.nota-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+  color: #c9a84c;
+}
+
+.nota-contenido h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.nota-contenido p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #8c7b6b;
+  margin: 0;
+}
+
+/* ========== Métodos de Donación ========== */
+.metodos-donacion-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f5efe6, #fff);
+}
+
+.metodos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.metodo-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.metodo-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(201, 168, 76, 0.2);
+}
+
+.metodo-card.destacado {
+  border: 3px solid #c9a84c;
+  grid-column: span 3;
+  background: linear-gradient(135deg, #f5efe6, #fff);
+}
+
+.metodo-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: linear-gradient(135deg, #c9a84c, #3b2314);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: 0 3px 10px rgba(201, 168, 76, 0.3);
+}
+
+.metodo-icono {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.metodo-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.metodo-card > p {
+  text-align: center;
+  color: #8c7b6b;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cuenta-info {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2px solid #e8e0d0;
+  margin-bottom: 1.5rem;
+}
+
+.cuenta-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #e8e0d0;
+}
+
+.cuenta-item:last-child {
+  border-bottom: none;
+}
+
+.cuenta-item strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.cuenta-item span {
+  color: #8c7b6b;
+  font-family: 'Courier New', monospace;
+}
+
+.metodo-detalles {
+  margin: 1.5rem 0;
+}
+
+.metodo-detalles p {
+  text-align: center;
+  color: #8c7b6b;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.metodo-detalles ul {
+  list-style: none;
+  padding: 0;
+}
+
+.metodo-detalles li {
+  padding: 0.6rem 0;
+  color: #8c7b6b;
+  font-size: 0.95rem;
+}
+
+.metodo-horarios {
+  background: linear-gradient(135deg, #f5efe6, #fff);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.metodo-horarios strong {
+  display: block;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.metodo-horarios p {
+  color: #8c7b6b;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.metodo-nota {
+  background: #fff9e6;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border-left: 3px solid #ffcc00;
+  font-size: 0.9rem;
+  color: #8c7b6b;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.metodo-nota strong {
+  color: #d4a200;
+}
+
+.btn-paypal {
+  width: 100%;
+  background: #0070ba;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.btn-paypal:hover {
+  background: #005a94;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 112, 186, 0.3);
+}
+
+.paypal-icon {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+}
+
+/* ========== Beneficios Fiscales ========== */
+.beneficios-fiscales-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.fiscal-content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f5efe6, #fff);
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.fiscal-icon {
+  font-size: 6rem;
+  color: #c9a84c;
+  flex-shrink: 0;
+}
+
+.fiscal-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.fiscal-info > p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #8c7b6b;
+  margin-bottom: 2rem;
+}
+
+.fiscal-requisitos {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #c9a84c;
+  margin-bottom: 2rem;
+}
+
+.fiscal-requisitos h4 {
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.fiscal-requisitos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fiscal-requisitos li {
+  padding: 0.4rem 0;
+  color: #8c7b6b;
+  font-size: 0.95rem;
+}
+
+/* ========== FAQ Donaciones ========== */
+.faq-donaciones-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f5efe6, #fff);
+}
+
+.faq-donaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.faq-donacion-item {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border-left: 4px solid #c9a84c;
+}
+
+.faq-donacion-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(201, 168, 76, 0.12);
+}
+
+.faq-donacion-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.faq-donacion-item p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #8c7b6b;
+  margin: 0;
+}
+
+/* ========== Testimonio ========== */
+.testimonio-donacion-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #c9a84c, #3b2314);
+  color: white;
+}
+
+.testimonio-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 3rem 2rem;
+}
+
+.testimonio-comillas {
+  font-family: 'Playfair Display', serif;
+  font-size: 10rem;
+  color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 1;
+}
+
+.testimonio-text {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonio-autor {
+  position: relative;
+  z-index: 2;
+}
+
+.testimonio-autor strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.testimonio-autor span {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* ========== CTA Donación ========== */
+.cta-donacion-section {
+  padding: 5rem 0;
+  background: white;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  color: #8c7b6b;
+  margin-bottom: 2.5rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-large {
+  padding: 1.2rem 3rem;
+  font-size: 1.2rem;
+}
+
+/* ========== Estilos Comunes ========== */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #8c7b6b;
+  margin-bottom: 3.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 1024px) {
+  .razones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .uso-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .metodos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .metodo-card.destacado {
+    grid-column: span 2;
+  }
+
+  .faq-donaciones-grid {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .intro-verse,
+  .transparencia-nota,
+  .fiscal-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .verse-text,
+  .nota-contenido {
+    text-align: center;
+  }
+
+  .razones-grid,
+  .uso-grid,
+  .metodos-grid,
+  .faq-donaciones-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metodo-card.destacado {
+    grid-column: span 1;
+  }
+
+  .cuenta-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.3rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-content h2 {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .testimonio-text {
+    font-size: 1.1rem;
+  }
+
+  .testimonio-comillas {
+    font-size: 6rem;
+    top: -30px;
+  }
+}
