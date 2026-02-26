@@ -7,7 +7,10 @@
       "Bash(ls:*)",
       "Bash(brew install:*)",
       "Bash(avconvert:*)",
-      "Bash(git -C \"/Users/lucasolivera/Desktop/sinai \" status)"
+      "Bash(git -C \"/Users/lucasolivera/Desktop/sinai \" status)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
