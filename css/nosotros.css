@@ -278,75 +278,6 @@
   margin: 0;
 }
 
-/* ========== Declaración de Fe ========== */
-.declaracion-fe-section {
-  padding: 5rem 0;
-  background: white;
-}
-
-.fe-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
-}
-
-.fe-card {
-  background: linear-gradient(135deg, #fff, #f5efe6);
-  padding: 2.5rem;
-  border-radius: 12px;
-  border: 2px solid #e8e0d0;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.fe-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 35px rgba(201, 168, 76, 0.15);
-  border-color: #c9a84c;
-}
-
-.fe-numero {
-  position: absolute;
-  top: -15px;
-  left: 30px;
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, #c9a84c, #3b2314);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-  box-shadow: 0 5px 15px rgba(201, 168, 76, 0.3);
-}
-
-.fe-card h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  color: #1a1a1a;
-  margin: 1.5rem 0 1rem;
-}
-
-.fe-card p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #8c7b6b;
-  margin-bottom: 1rem;
-}
-
-.fe-verso {
-  display: inline-block;
-  background: white;
-  color: #c9a84c;
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  border: 1px solid #e8e0d0;
-}
-
 /* ========== CTA Section ========== */
 .cta-section {
   padding: 5rem 0;
@@ -397,11 +328,6 @@
 }
 
 /* ========== Responsive ========== */
-@media (max-width: 1024px) {
-  .fe-grid {
-    gap: 2rem;
-  }
-}
 
 @media (max-width: 768px) {
 
@@ -423,10 +349,6 @@
 
   .vm-item {
     padding: 2.5rem 1.5rem;
-  }
-
-  .fe-grid {
-    grid-template-columns: 1fr;
   }
 
   .valor-item {
