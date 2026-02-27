@@ -280,22 +280,64 @@
 
 /* ========== CTA Section ========== */
 .cta-section {
-  padding: 5rem 0;
-  background: linear-gradient(135deg, #c9a84c, #3b2314);
+  padding: 7rem 0;
+  background: #1a1a1a;
   color: white;
   text-align: center;
 }
 
-.cta-content h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.cta-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2.5rem;
-  opacity: 0.95;
+.cta-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.8rem;
+}
+
+.cta-diamond {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #c9a84c;
+  transform: rotate(45deg);
+}
+
+.cta-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #c9a84c;
+  margin-bottom: 1.5rem;
+}
+
+.cta-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  line-height: 1.3;
+  color: #ffffff;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.03em;
+}
+
+.cta-line {
+  width: 50px;
+  height: 1px;
+  background: #c9a84c;
+  margin: 0 auto 1.8rem;
+}
+
+.cta-sub {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 3rem;
+  letter-spacing: 0.02em;
 }
 
 .cta-buttons {
@@ -303,6 +345,43 @@
   gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.cta-btn-outline {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  border: 1px solid #c9a84c;
+  color: #c9a84c;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn-outline:hover {
+  background: #c9a84c;
+  color: #1a1a1a;
+}
+
+.cta-btn-fill {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background: #c9a84c;
+  color: #1a1a1a;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn-fill:hover {
+  background: transparent;
+  color: #c9a84c;
+  border: 1px solid #c9a84c;
 }
 
 /* ========== Estilos Comunes ========== */
