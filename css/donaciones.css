@@ -132,63 +132,6 @@
   font-style: normal;
 }
 
-/* ========== Por Qué Dar ========== */
-.porque-dar-section {
-  padding: 5rem 0;
-  background: linear-gradient(135deg, #f5efe6, #fff);
-}
-
-.razones-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-}
-
-.razon-card {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border-top: 4px solid #c9a84c;
-}
-
-.razon-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(201, 168, 76, 0.2);
-}
-
-.razon-icono {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.razon-card h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  color: #1a1a1a;
-  margin-bottom: 1rem;
-}
-
-.razon-card p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #8c7b6b;
-  margin-bottom: 1.5rem;
-}
-
-.razon-verso {
-  display: block;
-  background: linear-gradient(135deg, #f5efe6, #fff);
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #c9a84c;
-  border-left: 3px solid #c9a84c;
-}
-
 /* ========== Dónde Va Tu Ofrenda ========== */
 .donde-va-section {
   padding: 5rem 0;
@@ -690,10 +633,6 @@
 
 /* ========== Responsive ========== */
 @media (max-width: 1024px) {
-  .razones-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .uso-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -728,7 +667,6 @@
     text-align: center;
   }
 
-  .razones-grid,
   .uso-grid,
   .metodos-grid,
   .faq-donaciones-grid {
