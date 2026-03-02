@@ -132,184 +132,255 @@
   font-style: normal;
 }
 
+/* ========== Sello de Seguridad ========== */
+.seguridad-section {
+  background: #1a1a1a;
+  padding: 1.8rem 0;
+}
+
+.seguridad-grid {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.seguridad-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: rgba(255,255,255,0.75);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.seguridad-item svg {
+  color: #c9a84c;
+  flex-shrink: 0;
+}
+
 /* ========== Métodos de Donación ========== */
 .metodos-donacion-section {
-  padding: 5rem 0;
-  background: linear-gradient(135deg, #f5efe6, #fff);
+  padding: 6rem 0;
+  background: #faf8f5;
 }
 
-.metodos-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-}
-
-.metodo-card {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.metodo-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(201, 168, 76, 0.2);
-}
-
-.metodo-card.destacado {
-  border: 3px solid #c9a84c;
-  grid-column: span 3;
-  background: linear-gradient(135deg, #f5efe6, #fff);
-}
-
-.metodo-badge {
-  position: absolute;
-  top: -12px;
-  right: 20px;
-  background: linear-gradient(135deg, #c9a84c, #3b2314);
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  box-shadow: 0 3px 10px rgba(201, 168, 76, 0.3);
-}
-
-.metodo-icono {
-  font-size: 4rem;
+.metodos-header {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
 }
 
-.metodo-card h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  color: #1a1a1a;
-  text-align: center;
+.metodos-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #c9a84c;
+  display: block;
   margin-bottom: 1rem;
 }
 
-.metodo-card > p {
-  text-align: center;
+.metodos-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 1.2rem;
+}
+
+.metodos-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.metodos-diamond {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #c9a84c;
+  transform: rotate(45deg);
+}
+
+.metodos-header > p {
   color: #8c7b6b;
-  margin-bottom: 2rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* --- Transferencia Destacada --- */
+.metodo-destacado {
+  background: #1a1a1a;
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 4px;
+  padding: 2.5rem 3rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.metodo-dest-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #c9a84c;
+  color: #1a1a1a;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2px;
+  margin-bottom: 1.8rem;
+}
+
+.metodo-dest-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.metodo-dest-texto h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+.metodo-dest-texto p {
+  color: rgba(255,255,255,0.65);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 0.97rem;
+}
+
+.metodo-dest-seguridad {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #c9a84c;
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+}
+
+.metodo-dest-seguridad svg {
+  flex-shrink: 0;
 }
 
 .cuenta-info {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  border: 2px solid #e8e0d0;
-  margin-bottom: 1.5rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .cuenta-item {
   display: flex;
   justify-content: space-between;
-  padding: 0.8rem 0;
-  border-bottom: 1px solid #e8e0d0;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
 .cuenta-item:last-child {
   border-bottom: none;
 }
 
-.cuenta-item strong {
-  color: #1a1a1a;
-  font-weight: 600;
+.cuenta-label {
+  color: rgba(255,255,255,0.45);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-.cuenta-item span {
-  color: #8c7b6b;
+.cuenta-valor {
+  color: #fff;
   font-family: 'Courier New', monospace;
+  font-size: 0.92rem;
 }
 
-.metodo-detalles {
-  margin: 1.5rem 0;
+.metodo-dest-footer {
+  margin-top: 1.8rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.5);
+  font-size: 0.85rem;
 }
 
-.metodo-detalles p {
-  text-align: center;
-  color: #8c7b6b;
-  margin-bottom: 1rem;
-  font-size: 0.95rem;
+.metodo-dest-footer a {
+  color: #c9a84c;
+  text-decoration: none;
 }
 
-.metodo-detalles ul {
-  list-style: none;
-  padding: 0;
+.metodo-dest-footer a:hover {
+  text-decoration: underline;
 }
 
-.metodo-detalles li {
-  padding: 0.6rem 0;
-  color: #8c7b6b;
-  font-size: 0.95rem;
+/* --- Grid de otros métodos --- */
+.metodos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
 }
 
-.metodo-horarios {
-  background: linear-gradient(135deg, #f5efe6, #fff);
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  margin-top: 1rem;
-}
-
-.metodo-horarios strong {
-  display: block;
-  color: #1a1a1a;
-  margin-bottom: 0.5rem;
-}
-
-.metodo-horarios p {
-  color: #8c7b6b;
-  margin: 0;
-  font-size: 0.95rem;
-}
-
-.metodo-nota {
-  background: #fff9e6;
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  border-left: 3px solid #ffcc00;
-  font-size: 0.9rem;
-  color: #8c7b6b;
-  line-height: 1.6;
-  margin-top: 1rem;
-}
-
-.metodo-nota strong {
-  color: #d4a200;
-}
-
-.btn-paypal {
-  width: 100%;
-  background: #0070ba;
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
+.metodo-card {
+  background: #fff;
+  border: 1px solid #e8e0d0;
+  border-radius: 4px;
+  padding: 2rem 1.8rem;
   transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.8rem;
 }
 
-.btn-paypal:hover {
-  background: #005a94;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(0, 112, 186, 0.3);
+.metodo-card:hover {
+  border-color: #c9a84c;
+  box-shadow: 0 8px 30px rgba(201,168,76,0.12);
+  transform: translateY(-4px);
 }
 
-.paypal-icon {
-  font-size: 1.5rem;
-  font-weight: 700;
+.metodo-card-icono {
+  color: #c9a84c;
+  margin-bottom: 1.2rem;
+}
+
+.metodo-card h3 {
   font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 0.7rem;
+}
+
+.metodo-card > p {
+  color: #8c7b6b;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.metodo-card-detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.metodo-card-detalle span {
+  font-size: 0.82rem;
+  color: #8c7b6b;
+}
+
+.metodo-card-nota {
+  font-size: 0.75rem;
+  color: #c9a84c;
+  letter-spacing: 0.05em;
+  border-top: 1px solid #e8e0d0;
+  padding-top: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 /* ========== Beneficios Fiscales ========== */
@@ -414,57 +485,6 @@
   margin: 0;
 }
 
-/* ========== Testimonio ========== */
-.testimonio-donacion-section {
-  padding: 5rem 0;
-  background: linear-gradient(135deg, #c9a84c, #3b2314);
-  color: white;
-}
-
-.testimonio-content {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  padding: 3rem 2rem;
-}
-
-.testimonio-comillas {
-  font-family: 'Playfair Display', serif;
-  font-size: 10rem;
-  color: rgba(255, 255, 255, 0.15);
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  line-height: 1;
-}
-
-.testimonio-text {
-  font-size: 1.4rem;
-  line-height: 1.8;
-  font-style: italic;
-  margin-bottom: 2rem;
-  position: relative;
-  z-index: 2;
-}
-
-.testimonio-autor {
-  position: relative;
-  z-index: 2;
-}
-
-.testimonio-autor strong {
-  display: block;
-  font-size: 1.2rem;
-  margin-bottom: 0.3rem;
-}
-
-.testimonio-autor span {
-  font-size: 0.95rem;
-  opacity: 0.9;
-}
-
 /* ========== CTA Donación ========== */
 .cta-donacion-section {
   padding: 5rem 0;
@@ -525,8 +545,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .metodo-card.destacado {
-    grid-column: span 2;
+  .metodo-dest-body {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .faq-donaciones-grid {
@@ -539,13 +560,13 @@
     font-size: 2rem;
   }
 
-  .intro-verse,
-  .fiscal-content {
-    flex-direction: column;
-    text-align: center;
+  .seguridad-grid {
+    gap: 1.5rem;
+    justify-content: flex-start;
   }
 
-  .verse-text {
+  .fiscal-content {
+    flex-direction: column;
     text-align: center;
   }
 
@@ -554,13 +575,13 @@
     grid-template-columns: 1fr;
   }
 
-  .metodo-card.destacado {
-    grid-column: span 1;
+  .metodo-destacado {
+    padding: 2rem 1.5rem;
   }
 
   .cuenta-item {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     gap: 0.3rem;
   }
 
