@@ -132,118 +132,6 @@
   font-style: normal;
 }
 
-/* ========== Dónde Va Tu Ofrenda ========== */
-.donde-va-section {
-  padding: 5rem 0;
-  background: white;
-}
-
-.uso-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-}
-
-.uso-card {
-  background: linear-gradient(135deg, #fff, #f5efe6);
-  padding: 2.5rem 2rem;
-  border-radius: 12px;
-  border: 2px solid #e8e0d0;
-  transition: all 0.3s ease;
-}
-
-.uso-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 35px rgba(201, 168, 76, 0.15);
-  border-color: #c9a84c;
-}
-
-.uso-porcentaje {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #c9a84c;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.uso-barra {
-  width: 100%;
-  height: 8px;
-  background: #e8e0d0;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-}
-
-.uso-progreso {
-  height: 100%;
-  background: linear-gradient(90deg, #c9a84c, #3b2314);
-  border-radius: 10px;
-  transition: width 1s ease;
-}
-
-.uso-card h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
-  color: #1a1a1a;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.uso-card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.uso-card li {
-  padding: 0.5rem 0;
-  color: #8c7b6b;
-  font-size: 0.95rem;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.uso-card li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #c9a84c;
-  font-weight: 700;
-}
-
-.transparencia-nota {
-  margin-top: 3rem;
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  background: linear-gradient(135deg, #f5efe6, #fff);
-  padding: 2.5rem;
-  border-radius: 15px;
-  border-left: 5px solid #c9a84c;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-}
-
-.nota-icon {
-  font-size: 3rem;
-  flex-shrink: 0;
-  color: #c9a84c;
-}
-
-.nota-contenido h4 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  color: #1a1a1a;
-  margin-bottom: 1rem;
-}
-
-.nota-contenido p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #8c7b6b;
-  margin: 0;
-}
-
 /* ========== Métodos de Donación ========== */
 .metodos-donacion-section {
   padding: 5rem 0;
@@ -633,10 +521,6 @@
 
 /* ========== Responsive ========== */
 @media (max-width: 1024px) {
-  .uso-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .metodos-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -656,18 +540,15 @@
   }
 
   .intro-verse,
-  .transparencia-nota,
   .fiscal-content {
     flex-direction: column;
     text-align: center;
   }
 
-  .verse-text,
-  .nota-contenido {
+  .verse-text {
     text-align: center;
   }
 
-  .uso-grid,
   .metodos-grid,
   .faq-donaciones-grid {
     grid-template-columns: 1fr;
