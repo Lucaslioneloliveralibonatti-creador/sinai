@@ -383,68 +383,6 @@
   margin-top: 0.5rem;
 }
 
-/* ========== Beneficios Fiscales ========== */
-.beneficios-fiscales-section {
-  padding: 5rem 0;
-  background: white;
-}
-
-.fiscal-content {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  background: linear-gradient(135deg, #f5efe6, #fff);
-  padding: 3rem;
-  border-radius: 15px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-}
-
-.fiscal-icon {
-  font-size: 6rem;
-  color: #c9a84c;
-  flex-shrink: 0;
-}
-
-.fiscal-info h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  color: #1a1a1a;
-  margin-bottom: 1rem;
-}
-
-.fiscal-info > p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #8c7b6b;
-  margin-bottom: 2rem;
-}
-
-.fiscal-requisitos {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border-left: 4px solid #c9a84c;
-  margin-bottom: 2rem;
-}
-
-.fiscal-requisitos h4 {
-  color: #1a1a1a;
-  margin-bottom: 1rem;
-}
-
-.fiscal-requisitos ul {
-  list-style: none;
-  padding: 0;
-}
-
-.fiscal-requisitos li {
-  padding: 0.4rem 0;
-  color: #8c7b6b;
-  font-size: 0.95rem;
-}
-
 /* ========== FAQ Donaciones ========== */
 .faq-donaciones-section {
   padding: 5rem 0;
@@ -563,11 +501,6 @@
   .seguridad-grid {
     gap: 1.5rem;
     justify-content: flex-start;
-  }
-
-  .fiscal-content {
-    flex-direction: column;
-    text-align: center;
   }
 
   .metodos-grid,
