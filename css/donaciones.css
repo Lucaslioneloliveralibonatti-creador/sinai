@@ -383,38 +383,6 @@
   margin-top: 0.5rem;
 }
 
-/* ========== CTA Donación ========== */
-.cta-donacion-section {
-  padding: 5rem 0;
-  background: white;
-  text-align: center;
-}
-
-.cta-content h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
-  color: #1a1a1a;
-  margin-bottom: 1rem;
-}
-
-.cta-content p {
-  font-size: 1.2rem;
-  color: #8c7b6b;
-  margin-bottom: 2.5rem;
-}
-
-.cta-buttons {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.btn-large {
-  padding: 1.2rem 3rem;
-  font-size: 1.2rem;
-}
-
 /* ========== Estilos Comunes ========== */
 .section-title {
   font-family: 'Playfair Display', serif;
