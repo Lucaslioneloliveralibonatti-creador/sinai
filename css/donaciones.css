@@ -383,46 +383,6 @@
   margin-top: 0.5rem;
 }
 
-/* ========== FAQ Donaciones ========== */
-.faq-donaciones-section {
-  padding: 5rem 0;
-  background: linear-gradient(135deg, #f5efe6, #fff);
-}
-
-.faq-donaciones-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
-}
-
-.faq-donacion-item {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
-  border-left: 4px solid #c9a84c;
-}
-
-.faq-donacion-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(201, 168, 76, 0.12);
-}
-
-.faq-donacion-item h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  color: #1a1a1a;
-  margin-bottom: 1rem;
-}
-
-.faq-donacion-item p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #8c7b6b;
-  margin: 0;
-}
-
 /* ========== CTA Donación ========== */
 .cta-donacion-section {
   padding: 5rem 0;
@@ -488,9 +448,6 @@
     gap: 2rem;
   }
 
-  .faq-donaciones-grid {
-    gap: 2rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -503,8 +460,7 @@
     justify-content: flex-start;
   }
 
-  .metodos-grid,
-  .faq-donaciones-grid {
+  .metodos-grid {
     grid-template-columns: 1fr;
   }
 
