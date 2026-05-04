@@ -302,7 +302,13 @@ nav a.active::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.45) 40%,
+    rgba(0, 0, 0, 0.75) 80%,
+    rgba(26, 26, 26, 1) 100%
+  );
   z-index: 1;
 }
 
@@ -337,6 +343,14 @@ nav a.active::after {
   text-transform: uppercase;
 }
 
+.hero-divider {
+  width: 60px;
+  height: 2px;
+  background: var(--color-accent);
+  margin: 1.2rem auto;
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
 .hero-subtitle {
   font-size: clamp(1rem, 2vw, 1.4rem);
   color: var(--color-white);
@@ -345,7 +359,9 @@ nav a.active::after {
   letter-spacing: 0.3em;
   text-transform: uppercase;
   opacity: 0.9;
+  animation: fadeInUp 1s ease-out 0.4s both;
 }
+
 
 /* ======= BOTONES ======= */
 .btn-primary {

@@ -856,3 +856,52 @@ document.querySelectorAll('form[action*="formspree"]').forEach(form => {
   });
 });
 
+// =========================================
+// DONACIONES - ACORDEÓN + STAGGER + HORARIOS
+// =========================================
+(function initDonaciones() {
+  const metodoCards = document.querySelectorAll('.metodo-card[data-metodo]');
+  if (metodoCards.length === 0) return;
+
+  metodoCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const metodo = card.dataset.metodo;
+      const body = document.getElementById('body-' + metodo);
+      const isOpen = card.classList.contains('active');
+
+      metodoCards.forEach(c => {
+        c.classList.remove('active');
+        const b = document.getElementById('body-' + c.dataset.metodo);
+        if (b) b.classList.remove('open');
+        if (c.dataset.metodo === 'efectivo') {
+          const horarios = document.getElementById('horarios-efectivo');
+          if (horarios) horarios.classList.remove('visible');
+        }
+      });
+
+      if (!isOpen && body) {
+        card.classList.add('active');
+        body.classList.add('open');
+        if (metodo === 'efectivo') {
+          const horarios = document.getElementById('horarios-efectivo');
+          if (horarios) horarios.classList.add('visible');
+        }
+      }
+    });
+  });
+
+  const gridCards = document.querySelectorAll('.metodos-grid .metodo-card');
+  const segItems = document.querySelectorAll('.seguridad-grid .seguridad-item');
+
+  const staggerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        staggerObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  gridCards.forEach(card => staggerObserver.observe(card));
+  segItems.forEach(item => staggerObserver.observe(item));
+})();

@@ -383,6 +383,151 @@
   margin-top: 0.5rem;
 }
 
+/* ========== Animaciones mejoradas ========== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger para elementos dentro de grids */
+.metodos-grid .metodo-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metodos-grid .metodo-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.metodos-grid .metodo-card:nth-child(1) { transition-delay: 0s; }
+.metodos-grid .metodo-card:nth-child(2) { transition-delay: 0.12s; }
+.metodos-grid .metodo-card:nth-child(3) { transition-delay: 0.24s; }
+.metodos-grid .metodo-card:nth-child(4) { transition-delay: 0.36s; }
+
+.seguridad-grid .seguridad-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.seguridad-grid .seguridad-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.seguridad-grid .seguridad-item:nth-child(1) { transition-delay: 0s; }
+.seguridad-grid .seguridad-item:nth-child(2) { transition-delay: 0.1s; }
+.seguridad-grid .seguridad-item:nth-child(3) { transition-delay: 0.2s; }
+.seguridad-grid .seguridad-item:nth-child(4) { transition-delay: 0.3s; }
+
+/* ========== Acordeón en tarjetas de métodos ========== */
+.metodo-card {
+  cursor: pointer;
+  position: relative;
+}
+
+.metodo-card.active {
+  border-color: #c9a84c;
+  box-shadow: 0 8px 30px rgba(201,168,76,0.18);
+}
+
+.metodo-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.metodo-card-chevron {
+  color: #c9a84c;
+  flex-shrink: 0;
+  margin-top: 0.3rem;
+  transition: transform 0.3s ease;
+}
+
+.metodo-card.active .metodo-card-chevron {
+  transform: rotate(180deg);
+}
+
+.metodo-card-body {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease;
+  margin-top: 0;
+}
+
+.metodo-card-body.open {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+/* ========== Sección de horarios (En efectivo) ========== */
+.horarios-donacion {
+  background: linear-gradient(135deg, #f5efe6, #fff);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 4px;
+  padding: 1rem 1.2rem;
+  margin-top: 1rem;
+  display: none;
+}
+
+.horarios-donacion.visible {
+  display: block;
+  animation: slideDown 0.35s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.horarios-donacion-titulo {
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #c9a84c;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.horarios-donacion-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.horarios-donacion-lista li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  font-size: 0.85rem;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.horarios-donacion-lista li span.dia {
+  font-weight: 700;
+  min-width: 80px;
+  color: #1a1a1a;
+}
+
+.horarios-donacion-lista li span.hora {
+  color: #8c7b6b;
+}
+
 /* ========== Estilos Comunes ========== */
 .section-title {
   font-family: 'Playfair Display', serif;
