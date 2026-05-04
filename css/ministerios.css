@@ -1101,3 +1101,10 @@
     padding: 1.5rem;
   }
 }
+
+/* ========== Banner backgrounds por ministerio ========== */
+.ministerio-hero--alabanza { background-image: url('../img/ministerios/alabanza-banner.jpeg'); }
+.ministerio-hero--kids     { background-image: url('../img/ministerios/2.JPG'); }
+.ministerio-hero--jovenes  { background-image: url('../img/ministerios/galeria1 copia.jpg'); }
+.ministerio-hero--varones  { background-color: #2d3782; }
+.ministerio-hero--danza    { background-color: #1a1a1a; }

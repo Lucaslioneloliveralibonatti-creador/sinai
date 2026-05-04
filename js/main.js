@@ -1,5 +1,3 @@
-console.log("🙏 Sitio Iglesia Sinai - Versión Mejorada cargada correctamente");
-
 // =========================================
 // CONFIGURACIÓN GENERAL
 // =========================================
@@ -17,13 +15,11 @@ const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('nav');
 
 // Header transparente al hacer scroll
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 100) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
+if (header) {
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 100);
+  });
+}
 
 // Menú hamburguesa móvil
 if (menuToggle) {
@@ -665,9 +661,6 @@ const lightboxEl = document.querySelector('.galeria-lightbox');
 const galeriaLightboxMin = lightboxEl ? new GaleriaLightboxMin(lightboxEl) : null;
 
 // =========================================
-// LOG DE INICIALIZACIÓN
-// =========================================
-// =========================================
 // MODAL DE INFORMACIÓN RÁPIDA (INDEX)
 // =========================================
 const infoModal = document.getElementById('infoModal');
@@ -863,14 +856,3 @@ document.querySelectorAll('form[action*="formspree"]').forEach(form => {
   });
 });
 
-// =========================================
-// LOG DE INICIALIZACIÓN
-// =========================================
-console.log('✅ Módulos cargados:');
-console.log('  - Hero Video: Activo');
-console.log('  - Carrusel Noticias:', noticiasCarousel.items.length > 0 ? 'Activo' : 'No encontrado');
-console.log('  - Galería Carrusel:', galeriaCarousels.length > 0 ? `${galeriaCarousels.length} carrusel(es)` : 'No encontrado');
-console.log('  - Galería Lightbox:', galeriaLightboxMin && galeriaLightboxMin.images.length > 0 ? `${galeriaLightboxMin.images.length} imágenes` : 'No encontrado');
-console.log('  - Animaciones Scroll:', scrollAnimations.elements.length > 0 ? `${scrollAnimations.elements.length} elementos` : 'No encontrado');
-console.log('  - Info Modal:', infoModal ? 'Activo' : 'No encontrado');
-console.log('🚀 Sistema listo!');
