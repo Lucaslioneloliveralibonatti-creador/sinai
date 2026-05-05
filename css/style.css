@@ -480,8 +480,10 @@ nav a.active::after {
   max-width: 500px;
   width: 100%;
   max-height: 80vh;
-  overflow-y: auto;
+  overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
   animation: modalSlideIn 0.3s ease;
 }
 
@@ -516,6 +518,8 @@ nav a.active::after {
 
 .info-modal-body {
   padding: 2.5rem;
+  overflow-y: auto;
+  flex: 1;
 }
 
 .info-modal-body .modal-icon {
