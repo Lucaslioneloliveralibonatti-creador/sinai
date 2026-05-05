@@ -695,10 +695,18 @@ const infoContent = {
       </div>
     </div>
     <div class="info-detail">
+      <div class="info-detail-icon">🧒</div>
+      <div class="info-detail-content">
+        <h4>Sábado - Kids</h4>
+        <p>14:30 - 17:00 hs</p>
+        <p>Actividades para los más chicos</p>
+      </div>
+    </div>
+    <div class="info-detail">
       <div class="info-detail-icon">🔥</div>
       <div class="info-detail-content">
         <h4>Sábado - Reunión de Jóvenes</h4>
-        <p>18:00 PM </p>
+        <p>18:00 PM</p>
         <p>Encuentro especial para jóvenes</p>
       </div>
     </div>
